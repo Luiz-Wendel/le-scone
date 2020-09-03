@@ -1,0 +1,25 @@
+footer {
+  padding: 20px 0;
+  background: $grey;
+
+  @include box-shadow(0 0 0 20px $grey);
+
+  p {
+    color: $light-beige;
+    float: left;
+
+    @include device(s) {
+      float: none;
+      text-align: center;
+    }
+  }
+
+  a img {
+    float: right;
+
+    @include device(s) {
+      float: none;
+      margin: 20px auto;
+    }
+  }
+}
