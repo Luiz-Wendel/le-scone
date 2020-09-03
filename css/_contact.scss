@@ -1,0 +1,78 @@
+.contact {
+  margin: 120px auto;
+  @include device(s) {
+    margin: 60px auto;
+  }
+}
+
+.contact form {
+  label {
+    @include type-primary(18);
+    display: block;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    @include type-primary(18);
+    color: $grey;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $dark-beige;
+    background: transparent;
+    margin-bottom: 1em;
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: $regular-beige;
+    }
+  }
+
+  textarea {
+    height: 120px;
+  }
+}
+
+input.button {
+  @include type-primary(18);
+  cursor: pointer;
+  color: $dark-beige;
+  text-transform: uppercase;
+  border: 2px solid $dark-beige;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  transition: 0.3s;
+
+  @include box-shadow(5px 5px 0 -2px $regular-beige, 5px 5px 0 0 $dark-beige);
+
+  &:hover {
+    @include box-shadow(3px 3px 0 -2px $regular-beige, 3px 3px 0 0 $dark-beige);
+  }
+}
+
+.contact-info {
+  display: inline-block;
+  color: $dark-beige;
+  margin-top: 2em;
+  margin-bottom: 3em;
+
+  @include device(l) {
+    float: right;
+    text-align: right;
+    margin-top: -3em;
+  }
+}
+
+.contact-map {
+  display: block;
+  clear: both;
+
+  @include box-shadow(0 0 0 10px $regular-beige);
+
+  img {
+    width: 100%;
+  }
+}
