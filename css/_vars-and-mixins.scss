@@ -3,7 +3,7 @@ $light-beige: #edece4;
 $regular-beige: #cbc6b9;
 $dark-beige: #988c77;
 $grey: #2a2426;
-$green: #988c77;
+$green: #1ab912;
 
 // Fonts
 $font-primary: 'PT Mono', monospace;
@@ -11,7 +11,7 @@ $font-secondary: 'Aref Ruqaa', serif;
 
 // Mixin
 @function em($pixel, $context: 16) {
-  @return $pixel / $context + 'em';
+  @return $pixel / $context + em;
 }
 
 @mixin type-primary($size) {
