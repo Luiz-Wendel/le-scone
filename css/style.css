@@ -52,8 +52,10 @@ table {
   border-spacing: 0;
 }
 
-body {
-  background: black;
+*,
+*::after,
+::before {
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=style.css.map */
